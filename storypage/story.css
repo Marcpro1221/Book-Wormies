@@ -1,0 +1,13 @@
+
+.story{
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+.story > div{
+    display: block;
+}
+.story > div > h1{
+    text-align: center;
+    margin-bottom: 150px;
+}

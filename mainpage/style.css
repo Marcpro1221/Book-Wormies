@@ -1,0 +1,269 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }  
+
+/* Hero Section*/
+.main{
+    position: relative;
+}
+.hero-title{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ .hero-section{
+    position: absolute;
+    background-color:  rgb(240, 248, 255, 0.8);
+    top: 30%;
+    right: 5%;
+    left: 60%;
+    padding: 10px;
+}
+.hero-section-2{
+    position: absolute;
+    background-color:  rgb(240, 248, 255, 0.8);
+    top: 60%;
+    right: 70%;
+    left: 5%;
+    padding: 10px;
+}
+
+.hero-title > h1{font-size: 4rem;}
+.hero-section > h2{font-size: 2rem;}
+.hero-section > h2 > span{font-size: 1rem;}
+.hero-section-2 > h3{font-size: 1.7rem;}
+.hero-section-2 > h3 > span{font-size: 1rem;}
+
+/* Hero Section*/
+
+
+/* list Section*/
+.list-container{
+    display: block;
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* Style for pop up Window*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000000;
+    z-index: 9999;
+}
+
+.popup-content {
+    width: 600px;
+    height: 400px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 35px;
+}
+.popping-up{
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.author{
+    margin-bottom: 40px;
+}
+.start-button{
+   border-radius: 10px; 
+}
+.book {
+    margin-bottom: 20px;
+}
+
+.blurred {
+    filter: blur(2px); /* Adjust the blur amount as needed */
+}
+/* Additional styles for the book */
+
+.darkmode{
+    background-color: #011222;
+}
+.darkmode-text{
+    color:#000000
+}
+.lightmode{
+    color: #ffffff;
+}
+.switch-button{
+    position:fixed;
+    top: 95%;
+    left: 90%;
+    z-index: 10; 
+}
+
+
+@media (max-width:1700px){
+    .hero-title > h1{font-size: 3rem;}
+    .hero-section > h2{font-size: 1.8rem;}
+
+}
+@media(max-width:1200px){
+    .hero-title > h1{font-size: 2.8rem;}
+    .hero-section > h2{font-size: 1.5rem;}
+    .hero-section > h2 > span{font-size: 0.8rem;}
+    .hero-section-2 > h3{font-size: 1.5rem;}
+    .hero-section-2 > h3 > span{font-size: 0.7rem;}
+    .featured-section{
+        width: 100%;
+        height: 800px;
+    }
+}
+@media(max-width:1000px){
+    .featured-section{
+        width: 100%;
+        height: 1000px;
+    }
+}
+@media (max-width: 880px){
+    .hero-title > h1{font-size: 2rem;}
+    .hero-section > h2{font-size: 1.2rem;}
+    .hero-section > h2 > span{font-size: 0.5rem;}
+    .hero-section-2 > h3{font-size: 1.2rem;}
+    .hero-section-2 > h3 > span{font-size: 0.5rem;}
+    .featured-title{
+        font-size: 25px;
+    }
+    .featured-section{
+        width: 100%;
+        height: 2500px;
+    }
+}
+@media(max-width:720px){
+    .hero-title > h1{font-size: 1.5rem;}
+    .hero-section > h2{font-size: 1rem;}
+    .hero-section > h2 > span{font-size: 0.5rem;}
+    .hero-section-2 > h3{font-size: 1rem;}
+    .hero-section-2 > h3 > span{font-size: 0.5rem;}
+}
+@media(max-width: 650px){
+    .hero-title > h1{font-size: 1.2rem;}
+    .hero-section > h2{font-size: 0.8rem;}
+    .hero-section > h2 > span{font-size: 0.3rem;}
+    .hero-section-2 > h3{font-size: 0.8rem;}
+    .hero-section-2 > h3 > span{font-size: 0.3rem;}
+    .featured-title{
+        font-size: 20px;
+    }
+    .featured-section{
+        width: 100%;
+        height: 2300px;
+    }
+    .hero-section{     
+        top: 20%;
+        right: 5%;
+        left: 60%;
+        padding: 5px;
+    }
+    .hero-section-2{
+        top: 40%;
+        right: 70%;
+        left: 5%;
+        padding: 5px;
+    }
+
+    .popup-content {
+        width: 450px;
+        height: 300px;
+    }
+    .pop-up-img{
+        width: 200px;
+        height: 300px;
+    }
+    .title-heading{
+        font-size: 1.2rem;
+    }
+    .description{
+        font-size: 0.9rem;
+    }
+    .author{
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+    .genre{
+        font-size: 0.7rem;
+    }
+    .close{
+        font-size: 15px;
+    }
+}
+@media(max-width:480px){
+    .hero-section > h2{font-size: 0.7rem;}
+    .hero-section > h2 > span{font-size: 0.3rem;}
+    .hero-section-2 > h3{font-size: 0.7rem;}
+    .hero-section-2 > h3 > span{font-size: 0.3rem;}
+    .featured-section{
+        width: 100%;
+        height: 1700px;
+    }
+    .hero-section{     
+        top: 20%;
+        right: 5%;
+        left: 60%;
+        padding: 5px;
+    }
+    .hero-section-2{
+        top: 40%;
+        right: 70%;
+        left: 5%;
+        padding: 5px;
+    }
+    .popup-content {
+        width: 360px;
+        height: 250px;
+    }
+    .pop-up-img{
+        width: 160px;
+        height: 240px;
+    }
+    .title-heading{
+        font-size: 0.9rem;
+        margin-bottom: 1px;
+    }
+    .author{
+        margin-bottom: 10px;
+        font-size: 0.7rem;
+    }
+    .description{
+        font-size: 0.6rem;
+    }
+    .start-button{
+        font-size: 0.6rem;
+    }
+    .genre{
+        font-size: 0.5rem;
+    }
+    .popup {
+        padding: 4px;
+    }
+}
