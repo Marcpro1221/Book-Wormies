@@ -1,0 +1,353 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}  
+.container-header{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+}
+#title{
+    margin-left: auto;
+    font-size: 2rem;
+}
+.selection{
+   margin-left: auto;
+   margin-right: 50px;
+}
+li{
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 40px;
+}
+
+ul{ 
+    display: flex;
+    padding: 0;
+}
+
+.outer{
+    z-index: 0;
+    position: relative;
+    background-color:aliceblue;
+}
+.hero-title{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+}
+.hero-title > h1{
+    font-size: 4rem;
+}
+.hero-title > p{
+    font-size: 1.5rem;
+}
+.getstarted{
+    margin-left: 50px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-size: 1.3rem;
+    border: 0px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px,
+     rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px,
+       rgba(240, 46, 170, 0.05) -25px 25px;
+}
+.getstarted:hover{
+    box-shadow:  rgba(240, 46, 170, 0.05) -5px 5px,
+    rgba(240, 46, 170, 0.1) -10px 10px,
+     rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.3) -20px 20px,
+        rgba(240, 46, 170, 0.4) -25px 25px;
+
+}
+
+/* Feature section*/
+.feature:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px,
+     rgba(240, 46, 170, 0.2) -15px 15px,
+      rgba(240, 46, 170, 0.1) -20px 20px,
+       rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+.prompt-bold {
+    font-family: "Prompt", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+}
+.mukta-bold {
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4rem;
+}
+@media(max-width:1800px){
+    .hero-title > h1{
+        font-size: 3.5rem;
+    }
+    .hero-title > p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:1670px){
+    .hero-title > h1{
+        font-size: 3.3rem;
+    }
+    .hero-title > p{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:1570px){
+    .hero-title > h1{
+        font-size: 3.1rem;
+    }
+    .hero-title > p{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:1400px){
+   .hero-title > h1{
+        font-size: 2.9rem;
+    }
+    .hero-title > p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:1200px){
+    .hero-title > h1{
+        font-size: 2.6rem;
+    }
+    .hero-title > p{
+        font-size: 1rem;
+    }
+}
+@media(max-width:1000px){
+    .hero-title > h1{
+        font-size: 2.2rem;
+    }
+    .hero-title > p{
+        font-size: 1rem;
+    }
+    .getstarted{
+        font-size: 1rem;
+        height: 40px;
+        width: 140px;
+    }
+    .selection{
+        margin-right: 40px;
+    }
+    li{
+        font-size: 1.3rem;
+        margin: 30px;
+    }
+    #title{
+        font-size: 1.8rem;
+    }
+}
+@media(max-width:890px){
+    .hero-title > h1{
+        font-size: 2rem;
+    }
+    .hero-title > p{
+        font-size: 0.9rem;
+    }
+    .getstarted{
+        font-size: 0.9rem;
+        height: 35px;
+        width: 135px;
+    }
+    li{
+        font-size: 1.1rem;
+        margin: 25px;
+    }
+
+}
+@media(max-width:800px){
+    .hero-title > h1{
+        font-size: 1.8rem;
+    }
+    .hero-title > p{
+        font-size: 0.7rem;
+    }
+    .getstarted{
+        font-size: 0.8rem;
+        height: 35px;
+        width: 135px;
+    }
+    .book-wormies{
+        font-size: 1.8rem;
+    }
+    .selection{
+        margin-right: 30px;
+    }
+    .protest-revolution-regular {
+        font-size: 3rem;
+    }
+    .prompt-bold {
+        font-size: 3rem;
+    }
+    .mukta-bold {
+        font-size: 3rem;
+    }
+   
+}
+@media(max-width:700px){
+    .hero-title > h1{
+        font-size: 1.5rem;
+    }
+    .hero-title > p{
+        font-size: 0.6rem;
+    }
+    .getstarted{
+        margin-left: 35px;
+        font-size: 0.7rem;
+        height: 30px;
+        width: 130px;
+    }
+    .book-wormies{
+        font-size: 1.5rem;
+    }
+    li{
+        font-size: 1rem;
+        margin: 15px;
+    }
+    .selection{
+        margin-right: 30px;
+    }
+    .protest-revolution-regular {
+        font-size: 3rem;
+    }
+    .prompt-bold {
+        font-size: 3rem;
+    }
+    .mukta-bold {
+        font-size: 3rem;
+    }
+}
+@media(max-width:560px){
+    .hero-title > h1{
+        font-size: 1.3rem;
+    }
+    .hero-title > p{
+        font-size: 0.5rem;
+    }
+    .getstarted{
+        margin-left: 30px;
+        height: 25px;
+        width: 125px;
+    }
+    .book-wormies{
+        font-size: 1.2rem;
+    }
+    li{
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .selection{
+        margin-right: 25px;
+    }
+    .protest-revolution-regular {
+        font-size: 2rem;
+    }
+    .prompt-bold {
+        font-size: 2rem;
+    }
+    .mukta-bold {
+        font-size: 2rem;
+    }
+}
+@media(max-width:480px){
+    .hero-title > h1{
+        font-size: 1.1rem;
+    }
+    .hero-title > p{
+        font-size: 0.4rem;
+    }
+    .getstarted{ 
+        height: 25px;
+        width: 125px;
+        margin-left: 30px;
+    }
+    li{
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+    .selection{
+        margin-right: 20px;
+    }
+    .protest-revolution-regular {
+        font-size: 1.5rem;
+    }
+    .prompt-bold {
+        font-size: 1.5rem;
+    }
+    .mukta-bold {
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:390px){
+    .hero-title > h1{
+        font-size: 1rem;
+    }
+    .hero-title > p{
+        font-size: 0.3rem;
+    }
+    .getstarted{ 
+        height: 20px;
+        width: 120px;
+        margin-left: 20px;
+    }
+    li{
+        font-size: 0.6rem;
+        margin: 3px;
+    }
+    .selection{
+        margin-right: 15px;
+    }
+}
+@media(max-width:335px){
+    .hero-title > h1{
+        font-size: 0.8rem;
+    }
+    .hero-title > p{
+        font-size: 0.2rem;
+    }
+    .getstarted{ 
+        height: 15px;
+        width: 115px;
+        margin-left: 10px;
+    }
+    li{
+        font-size: 0.5rem;
+        margin: 2px;
+    }
+    .selection{
+        margin-left: auto;
+        margin-right: 10px;
+     }
+}
