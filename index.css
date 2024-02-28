@@ -248,6 +248,9 @@ ul{
     .mukta-bold {
         font-size: 3rem;
     }
+    .subtext-holder{
+        font-size: 0.8rem;
+    }
 }
 @media(max-width:560px){
     .hero-title > h1{
@@ -280,6 +283,9 @@ ul{
     .mukta-bold {
         font-size: 2rem;
     }
+    .subtext-holder{
+        font-size: 0.8rem;
+    }
 }
 @media(max-width:480px){
     .hero-title > h1{
@@ -308,6 +314,9 @@ ul{
     }
     .mukta-bold {
         font-size: 1.5rem;
+    }
+    .subtext-holder{
+        font-size: 0.6rem;
     }
 }
 @media(max-width:390px){
