@@ -21,8 +21,8 @@ function darkMode(){
     }
     var icon = document.getElementById("moon-icon");
     if(icon.src.includes("moon-fill.svg")){
-        icon.src = "./asset/link/moon.svg";
+        icon.src = "../asset/link/moon.svg";
     }else{
-        icon.src = "./asset/link/moon-fill.svg";
+        icon.src = "../asset/link/moon-fill.svg";
     }
 }
