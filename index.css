@@ -338,6 +338,9 @@ ul{
     .selection{
         margin-right: 15px;
     }
+    .subtext-holder{
+        font-size: 0.5rem;
+    }
 }
 @media(max-width:335px){
     .hero-title > h1{
