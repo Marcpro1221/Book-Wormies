@@ -28,7 +28,7 @@ body{
    margin-left: auto;
    margin-right: 50px;
 }
-li{
+.header{
     font-size: 1.5rem;
     list-style: none;
     margin: 40px;
@@ -106,6 +106,10 @@ ul{
     font-style: normal;
     font-size: 4rem;
 }
+.pricing-table{
+    display: block;
+}
+
 @media(max-width:1800px){
     .hero-title > h1{
         font-size: 3.5rem;
@@ -161,7 +165,7 @@ ul{
     .selection{
         margin-right: 40px;
     }
-    li{
+    .header{
         font-size: 1.3rem;
         margin: 30px;
     }
@@ -181,7 +185,7 @@ ul{
         height: 35px;
         width: 135px;
     }
-    li{
+    .header{
         font-size: 1.1rem;
         margin: 25px;
     }
@@ -232,7 +236,7 @@ ul{
     .book-wormies{
         font-size: 1.5rem;
     }
-    li{
+    .header{
         font-size: 1rem;
         margin: 15px;
     }
@@ -267,7 +271,7 @@ ul{
     .book-wormies{
         font-size: 1.2rem;
     }
-    li{
+    .header{
         font-size: 1rem;
         margin: 10px;
     }
@@ -286,6 +290,14 @@ ul{
     .subtext-holder{
         font-size: 0.8rem;
     }
+    .getstarted{
+   
+    box-shadow: rgba(240, 46, 170, 0.4) -2px 2px,
+    rgba(240, 46, 170, 0.3) -7px 7px,
+     rgba(240, 46, 170, 0.2) -10px 10px,
+      rgba(240, 46, 170, 0.1) -14px 14px,
+       rgba(240, 46, 170, 0.05) -19px 19px;
+    }
 }
 @media(max-width:480px){
     .hero-title > h1{
@@ -299,7 +311,7 @@ ul{
         width: 125px;
         margin-left: 30px;
     }
-    li{
+    .header{
         font-size: 0.8rem;
         margin: 5px;
     }
@@ -318,6 +330,14 @@ ul{
     .subtext-holder{
         font-size: 0.6rem;
     }
+    .getstarted{
+   
+    box-shadow: rgba(240, 46, 170, 0.4) -2px 2px,
+    rgba(240, 46, 170, 0.3) -7px 7px,
+     rgba(240, 46, 170, 0.2) -10px 10px,
+      rgba(240, 46, 170, 0.1) -14px 14px,
+       rgba(240, 46, 170, 0.05) -19px 19px;
+    }
 }
 @media(max-width:390px){
     .hero-title > h1{
@@ -331,7 +351,7 @@ ul{
         width: 120px;
         margin-left: 20px;
     }
-    li{
+    .header{
         font-size: 0.6rem;
         margin: 3px;
     }
@@ -354,7 +374,7 @@ ul{
         width: 115px;
         margin-left: 10px;
     }
-    li{
+    .header{
         font-size: 0.5rem;
         margin: 2px;
     }
