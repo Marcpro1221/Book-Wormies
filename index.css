@@ -64,18 +64,18 @@ ul{
     width: 150px;
     font-size: 1.3rem;
     border: 0px;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px,
-     rgba(240, 46, 170, 0.2) -15px 15px,
-      rgba(240, 46, 170, 0.1) -20px 20px,
-       rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: rgba(92, 184, 92, 0.4) -5px 5px,
+    rgba(92, 184, 92, 0.3) -10px 10px,
+     rgba(92, 184, 92, 0.2) -15px 15px,
+      rgba(92, 184, 92, 0.1) -20px 20px,
+       rgba(92, 184, 92, 0.05) -25px 25px;
 }
 .getstarted:hover{
-    box-shadow:  rgba(240, 46, 170, 0.05) -5px 5px,
-    rgba(240, 46, 170, 0.1) -10px 10px,
-     rgba(240, 46, 170, 0.2) -15px 15px,
-      rgba(240, 46, 170, 0.3) -20px 20px,
-        rgba(240, 46, 170, 0.4) -25px 25px;
+    box-shadow:  rgba(92, 184, 92, 0.05) -5px 5px,
+    rgba(92, 184, 92, 0.1) -10px 10px,
+     rgba(92, 184, 92, 0.2) -15px 15px,
+      rgba(92, 184, 92, 0.3) -20px 20px,
+        rgba(92, 184, 92, 0.4) -25px 25px;
 
 }
 
@@ -108,6 +108,52 @@ ul{
 }
 .pricing-table{
     display: block;
+}
+/* About Me Section*/
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.about-me > div:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    text-align: center;
+}
+.about-me > div:nth-child(2){
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: span 4;
+}
+.about-me > div:nth-child(3){
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-end: span 4;
+    padding: 5%;
+}
+.about-section{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0;
+}
+.aboutme-heading{
+    font-size: 3.5rem;
+}
+.description{
+    font-size: 2.5rem;
+}
+.description-2{
+    font-size: 1.5rem;
+}
+.contact-me{
+    margin-top: 5%;
 }
 
 @media(max-width:1800px){
@@ -218,7 +264,24 @@ ul{
     .mukta-bold {
         font-size: 3rem;
     }
-   
+    .about-me > div:nth-child(2){
+        grid-row-start: 3;
+        grid-row-end: span 4;
+       
+    }
+    .about-section{
+        gap: 10px;
+        font-size: 1.3rem;
+    }
+    .aboutme-heading{
+        font-size: 3rem;
+    }
+    .description{
+        font-size: 2rem;
+    }
+    .description-2{
+        font-size: 1rem;
+    }
 }
 @media(max-width:700px){
     .hero-title > h1{
@@ -253,6 +316,19 @@ ul{
         font-size: 3rem;
     }
     .subtext-holder{
+        font-size: 0.8rem;
+    }
+    .about-section{
+        gap: 7px;
+        font-size: 1rem;
+    }
+    .aboutme-heading{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1.7rem;
+    }
+    .description-2{
         font-size: 0.8rem;
     }
 }
@@ -292,11 +368,11 @@ ul{
     }
     .getstarted{
    
-    box-shadow: rgba(240, 46, 170, 0.4) -2px 2px,
-    rgba(240, 46, 170, 0.3) -7px 7px,
-     rgba(240, 46, 170, 0.2) -10px 10px,
-      rgba(240, 46, 170, 0.1) -14px 14px,
-       rgba(240, 46, 170, 0.05) -19px 19px;
+    box-shadow: rgba(92, 184, 92, 0.4) -2px 2px,
+    rgba(92, 184, 92, 0.3) -7px 7px,
+     rgba(92, 184, 92, 0.2) -10px 10px,
+      rgba(92, 184, 92, 0.1) -14px 14px,
+       rgba(92, 184, 92, 0.05) -19px 19px;
     }
 }
 @media(max-width:480px){
@@ -332,12 +408,37 @@ ul{
     }
     .getstarted{
    
-    box-shadow: rgba(240, 46, 170, 0.4) -2px 2px,
-    rgba(240, 46, 170, 0.3) -7px 7px,
-     rgba(240, 46, 170, 0.2) -10px 10px,
-      rgba(240, 46, 170, 0.1) -14px 14px,
-       rgba(240, 46, 170, 0.05) -19px 19px;
+    box-shadow: rgba(92, 184, 92, 0.4) -2px 2px,
+    rgba(92, 184, 92, 0.3) -7px 7px,
+     rgba(92, 184, 92, 0.2) -10px 10px,
+      rgba(92, 184, 92, 0.1) -14px 14px,
+       rgba(92, 184, 92, 0.05) -19px 19px;
     }
+    .about-me > div:nth-child(1){
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        align-items: center;
+        justify-content: center;
+  
+    }
+    .about-me > div:nth-child(2){
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end:  3;
+    }
+    .about-me > div:nth-child(3){
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-end: span 4;
+    }
+    .contact-me{
+        margin-top: 10%;
+    }
+    
+   
 }
 @media(max-width:390px){
     .hero-title > h1{
