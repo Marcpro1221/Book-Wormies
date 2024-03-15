@@ -42,11 +42,16 @@
                 <h1 class="poppins-bold book-wormies">Book Wormies</h1>
             </div>
             <div class="selection">
-                <ul> 
-                    <a href="#pricing" style="color: inherit; text-decoration: none;" class="header"><li>Pricing</li></a>
-                    <a href="#about-me" style="color: inherit; text-decoration: none;" class="header"><li>About</li></a>
-                    <a href="#" style="color: inherit; text-decoration: none;" class="header"><li>Contact</li></a>
-                </ul>
+                <div class="center" id="bttn" onclick="toggleNavigation()">
+                  <div></div>
+                </div>
+                <div class="sidebar">
+                  <ul style="padding: 0;">
+                    <li class="header"><a style="text-decoration: none; color: inherit;" href="#">Portfolio</a></li>
+                    <li class="header"><a style="text-decoration: none; color: inherit;" href="#about-me">About</a></li>
+                    <li class="header"><a style="text-decoration: none; color: inherit;" href="#">Contact</a></li>
+                  </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -108,9 +113,9 @@
         </div>
       </div>
     
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <div id="carouselExampleCaptions" class="carousel slide" style="z-index: 0;">
+        <div class="carousel-indicators" >
+          <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
@@ -152,7 +157,7 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
@@ -165,7 +170,7 @@
       <section >
         <div id="pricing" class="pricing-header p-4 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-normal text-body-emphasis poppins-regular">Pricing</h1>
-          <p class="fs-5 text-body-secondary poppins-regular">We make sure you’re getting the most bang for your buck. Make them choose you.</p>
+          <p class="fs-5 text-body-secondary poppins-regular">We make sure you`re getting the most bang for your buck. Make them choose you.</p>
         </div>
 
         <div class="container" style="margin-top: 30px;">
@@ -260,5 +265,6 @@
       </div>
     </section>
 
+    <script src="./index.js"></script>
 </body>
 </html>
