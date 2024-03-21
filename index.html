@@ -42,16 +42,34 @@
                 <h1 class="poppins-bold book-wormies">Book Wormies</h1>
             </div>
             <div class="selection">
-                <div class="center" id="bttn" onclick="toggleNavigation()">
-                  <div></div>
-                </div>
-                <div class="sidebar">
-                  <ul style="padding: 0;">
-                    <li class="header"><a style="text-decoration: none; color: inherit;" href="#">Portfolio</a></li>
-                    <li class="header"><a style="text-decoration: none; color: inherit;" href="#about-me">About</a></li>
-                    <li class="header"><a style="text-decoration: none; color: inherit;" href="#">Contact</a></li>
+                <div>
+                  <ul>
+                    <li class="header hidden-item"><a style="text-decoration: none; color: inherit;" href="#">Portfolio</a></li>
+                    <li class="header hidden-item" ><a style="text-decoration: none; color: inherit;" href="#about-me">About</a></li>
+                    <li class="header hidden-item"><a style="text-decoration: none; color: inherit;" href="#">Contact</a></li>
+                    <li class="header hidden-item"><a style="text-decoration: none; color: inherit;" href="#">Blog</a></li>
                   </ul>
                 </div>
+            </div>
+            <!-- Create a sidebar separately -->
+            <div class="sidebar-hide">
+              <div class="center" onclick="toggleNavigation()">
+                <div></div>
+              </div>
+              <div class="sidebar">
+                <div class="hidden-item poppins-bold book-title" style="text-align: center; margin: 10%; margin-bottom: 30%; color: white;">Book Wormies</div>
+                <ul class="pad">
+                  <li class="header hidden-item" id="person-icon"><a style="text-decoration: none; color: inherit;" href="#"><img class="hidden-item" src="./asset/link/person-icon.svg" alt="svg-icon--person">Portfolio</a></li>
+                  <hr>
+                  <li class="header hidden-item" id="about-icon"><a style="text-decoration: none; color: inherit;" href="#about-me"> <img class="hidden-item" src="./asset/link/person-checkmark.svg" alt="person-checkmark-svg-icon">About</a></li>
+                  <hr>
+                  <li class="header hidden-item" id="contact-icon"><a style="text-decoration: none; color: inherit;" href="#"> <img class="hidden-item" src="./asset/link/contact-person.svg" alt="contact-icon-svg">Contact</a></li>
+                  <hr>
+                  <li class="header hidden-item" id="blog-icon"><a style="text-decoration: none; color: inherit;" href="#"><img class="hidden-item" src="./asset/link/blog-svgrepo-com.svg" alt="blog-icon-svg">Blog</a></li>
+                  <hr>
+                </ul>
+                <p class="hidden-item poppins-regular footer" style="padding: 10%; color: white;">Copyright ©2024 All rights reserved | Book Wormies by Marc Roland Soniega</p>
+              </div>
             </div>
         </div>
     </header>

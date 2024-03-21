@@ -20,6 +20,9 @@ body{
     align-items: center;
     width: 100%;
 }
+.sidebar-hide{
+    display: none;
+}
 #title{
     margin-left: auto;
     font-size: 2rem;
@@ -31,15 +34,17 @@ body{
 .header{
     font-size: 1.5rem;
     list-style: none;
-    margin: 40px;
+    margin: 20px;
+    display: flex;
 }
 
 .header:hover{
     background-color: rgba(92, 184, 92, 0.3);
     transition: 0.3s;
     border-radius: 10%;
-    padding: 2%;
+    padding: 1%;
     cursor: pointer;
+    align-items: center;
 }
 ul{ 
     display: flex;
@@ -77,21 +82,17 @@ ul{
        rgba(92, 184, 92, 0.05) -25px 25px;
 }
 .getstarted:hover{
-    box-shadow:  rgba(92, 184, 92, 0.05) -5px 5px,
-    rgba(92, 184, 92, 0.1) -10px 10px,
-     rgba(92, 184, 92, 0.2) -15px 15px,
-      rgba(92, 184, 92, 0.3) -20px 20px,
-        rgba(92, 184, 92, 0.4) -25px 25px;
-
+    box-shadow: 
+        rgba(92, 184, 92, 0.4) -10px 10px;
 }
 
 /* Feature section*/
 .feature:hover{
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px,
-     rgba(240, 46, 170, 0.2) -15px 15px,
-      rgba(240, 46, 170, 0.1) -20px 20px,
-       rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: rgba(92, 184, 92, 0.4) -2px 2px,
+    rgba(92, 184, 92, 0.3) -7px 7px,
+     rgba(92, 184, 92, 0.2) -10px 10px,
+      rgba(92, 184, 92, 0.1) -14px 14px,
+       rgba(92, 184, 92, 0.05) -19px 19px;
 }
 
 .protest-revolution-regular {
@@ -177,6 +178,10 @@ ul{
     .hero-title > p{
         font-size: 1.4rem;
     }
+    .header{
+        font-size: 1.3rem;
+        margin: 20px;
+    }
 }
 @media(max-width:1570px){
     .hero-title > h1{
@@ -219,7 +224,7 @@ ul{
     }
     .header{
         font-size: 1.3rem;
-        margin: 30px;
+        margin: 20px;
     }
     #title{
         font-size: 1.8rem;
@@ -239,7 +244,7 @@ ul{
     }
     .header{
         font-size: 1.1rem;
-        margin: 25px;
+        margin: 20px;
     }
 
 }
@@ -353,12 +358,16 @@ ul{
     .book-wormies{
         font-size: 1.2rem;
     }
+    .book-title{
+        font-size: 1.6rem;
+    }
     .header{
         font-size: 1rem;
-        margin: 10px;
-        display: none;
+        font-weight: bold;
         color: white;
         transition: 0.3s;
+        margin-top: 10px;
+        padding-left: 10%;
     }
     .selection{
         margin-right: 25px; 
@@ -373,12 +382,17 @@ ul{
     .prompt-bold {
         font-size: 2rem;
     }
+    .footer{
+        font-size: 0.8rem;
+        margin-top: 100%;
+    }
     .mukta-bold {
         font-size: 2rem;
     }
     .subtext-holder{
         font-size: 0.8rem;
     }
+   
     .getstarted{
     box-shadow: rgba(92, 184, 92, 0.4) -2px 2px,
     rgba(92, 184, 92, 0.3) -7px 7px,
@@ -388,11 +402,23 @@ ul{
     }
     ul {
      display: block;
-     padding: 0;
+    }
+    .pad{
+        padding: 0;
+    }
+    .hidden-item{
+        display: none;
+        transition: 0.3s;
+    }
+    .header:hover{
+        transition: 0.3s;
     }
     /*
     Hamburger Menu
     */
+    .sidebar-hide{
+        display: block;
+    }
     .center {
         top: 2%;
         right: 4%;
@@ -425,13 +451,13 @@ ul{
       z-index: 1;
       width:0;
       height: 100vh;
-      background-color: grey;
+      background-color: rgb(56, 170, 94);
       position: fixed;
       top: 0;
       left: 0;
       transition: 0.5s;
     }
-    .sidebar-open .header {
+    .sidebar-open .hidden-item {
         display: block;
         transition: 1s;
     }
@@ -448,9 +474,16 @@ ul{
         width: 125px;
         margin-left: 30px;
     }
+    .book-title{
+        font-size: 1.4rem;
+    }
     .header{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 5px;
+    }
+    .footer{
+        font-size: 0.6rem;
+        margin-top: 80%;
     }
     .selection{
         margin-right: 20px;
@@ -512,8 +545,15 @@ ul{
         margin-left: 20px;
     }
     .header{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         margin: 3px;
+    }
+    .footer{
+        font-size: 0.6rem;
+        margin-top: 60%;
+    }
+    .book-title{
+        font-size: 1.2rem;
     }
     .selection{
         margin-right: 15px;
@@ -535,11 +575,15 @@ ul{
         margin-left: 10px;
     }
     .header{
-        font-size: 0.5rem;
+        font-size: 1rem;
         margin: 2px;
     }
     .selection{
         margin-left: auto;
         margin-right: 10px;
      }
+     .footer{
+        font-size: 0.6rem;
+        margin-top: 50%;
+    }
 }
